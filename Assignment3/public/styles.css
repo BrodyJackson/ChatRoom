@@ -1,0 +1,152 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    background-color: #FBFBFF;
+    height: 10vh;
+    border-bottom: 2px solid #e3e3e3;
+}
+.messages{
+    background-color: #FCFCFC;
+    height: 90vh;
+    padding:0; 
+    /* border: 2px solid #e3e3e3; */  
+}
+
+.messageContainer{
+    padding:15px; 
+}
+
+.users{
+    background-color: #FBFBFF; 
+    height: 90vh;
+    border-right: 2px solid #e3e3e3;
+}
+
+.customBottomAlign{
+    /* position: absolute;  */
+    bottom:0;
+    width:100%; 
+    left:0; 
+    height:7vh 
+}
+
+.fullHeight{
+    height:100%; 
+}
+
+.form-control{
+    border:0 !important; 
+    border-top: 2px solid #e3e3e3 !important;
+    border-bottom: 2px solid #e3e3e3 !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    border-radius: 0 !important; 
+    background-color: #94B0DA !important;
+    border-color: #94B0DA !important; 
+}
+
+
+.mainFlex{
+    display:flex;
+    justify-content: flex-end;
+    flex-flow:column
+}
+.customFlexbox{
+    display: flex; 
+    /* justify-content: flex-end;  */
+    align-items: flex-start; 
+    flex-flow:column; 
+    height:82vh; 
+    min-height: 82vh; 
+    max-height: 82vh; 
+    overflow:auto; 
+}
+.customFlexbox:first-child {
+    margin-top: auto !important;
+}
+
+.individualMessage{
+    /* height: 5vh; 
+    min-height: 5vh;  */
+    margin-top:5px;
+    margin-bottom:5px; 
+    padding: 5px 20px; 
+    background-color: #BDD5EA;
+    border-radius: 20px; 
+    word-wrap: break-word; 
+}
+
+
+.messageSpan{
+    font-size:1em; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+}
+
+.marginFirst{
+    margin-top: auto !important; 
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+
+.userNameStyles{
+    font-weight: 300;
+    color: #2E3532; 
+    font-size: 1.5em; 
+    letter-spacing: 1px; 
+}
+
+.userOnlineHeader{
+    margin-top:3vh;
+}
+
+.userHeaderText{
+    font-weight: 100; 
+    color: #2E3532; 
+    font-size: 3em; 
+    letter-spacing: 1px;  
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcomeMessage{
+    font-weight: 100;
+    color: #2E3532;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 2vh;
+    white-space: nowrap;
+}
+
+.killMargin{
+    margin-bottom:0; 
+}
+#nameHeaderSpan{
+    font-weight: 700; 
+}
+
+@media screen and (max-width:980px) {
+    .users{
+        border-bottom: 2px solid #e3e3e3 !important;
+        height: auto !important; 
+    }
+}
+
+@media screen and (max-width:430px) {
+    .welcomeMessage{
+        font-size:1.5em;  
+    }
+}
